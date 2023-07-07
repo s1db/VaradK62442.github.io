@@ -18,10 +18,9 @@ nav ul {
     margin: 0px; 
     padding: 0px; 
     overflow: hidden;
-}
-nav ul li {
-    float: left;
-    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 nav ul li a {
     display: block;
