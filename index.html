@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varad Kulkarni - Coding Projects & Services</title>
+
+    <!-- CSS -->
+    <style>
+        /* Content */
+        .introImg {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .introImg img {
+            height: 22vw;
+            width: 22vw;
+        }
+
+        .introPara {
+            margin-right: 10px;
+        }
+
+        .servicesOverview {
+            clear: both;
+        }
+
+        .servicesOverview ul {
+            list-style-type: ">>> ";
+        }
+
+        /* Collapsible */
+        details {
+            user-select: none;
+        }
+
+        details>summary span.icon {
+            width: 24px;
+            height: 24px;
+            transition: all 0.3s;
+            margin-left: auto;
+        }
+
+        details[open] summary span.icon {
+            transform: rotate(180deg);
+        }
+
+        summary {
+            display: flex;
+            cursor: pointer;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details p {
+            background-color: #DEDEB1;
+        }
+    </style>
+
 </head>
 <body>
     
@@ -37,6 +94,93 @@
     <header>
         <h1>Home</h1>
     </header>
+
+    <!-- Content -->
+    <div>
+        <div class="introImg">
+            <img src="html/images/introImg.png">
+        </div>
+        <div>
+            <p class="introPara">
+                > Welcome to my website! I'm Varad Kulkarni, a passionate 2nd year Computer Science and Mathematics student. 
+                I love programming, problem-solving, and all things tech. 
+                <br><br>
+                > Throughout my journey, I have gained hands-on experience in various programming languages and frameworks, honing my skills in software development, web applications, and more. 
+                <br><br>
+                > I embrace opportunities to continuously learn and stay up-to-date with the rapidly evolving tech landscape. 
+                I enjoy tackling complex challenges and finding elegant solutions through coding. 
+                <br><br>
+                > Let's collaborate and bring your ideas to life!
+            </p>
+            <br><br>
+            <h3>Check out my <a href="https://github.com/VaradK62442">Github</a> page.</h3>
+            <h3>Get in <a href="html/contact.html">touch</a>.</h1>
+        </div>
+
+        <!-- Collapsibles -->
+        <div class="servicesOverview">
+            <h2>Services Overview</h2>
+            <p>
+                > I offer a range of programming and computing services tailored to meet your needs. 
+                With extensive experience, I bring versatile skills and a problem-solving mindset to deliver exceptional results.
+            </p>
+
+            <details>
+                <summary>
+                    >>> Python Development
+                  <span class="icon">▼</span>
+                </summary>
+                <p>
+                    Leverage the versatility and power of Python for your software projects.<br>
+                    I specialize in Python development, crafting robust and scalable solutions for a wide range of applications.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    >>> Automation
+                  <span class="icon">▼</span>
+                </summary>
+                <p>
+                    Streamline your workflows and increase efficiency with customized automation solutions.<br>
+                    From repetitive tasks to complex processes, I can create automated systems that save you time and resources.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    >>> Web Development
+                  <span class="icon">▼</span>
+                </summary>
+                <p>
+                    Create a strong online presence with captivating and functional websites.<br>
+                    Using HTML/CSS and JavaScript, I design and develop responsive, user-friendly websites that align with your brand and goals.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    >>> PHP Development
+                  <span class="icon">▼</span>
+                </summary>
+                <p>
+                    Develop dynamic and interactive web applications with PHP.<br>
+                    I can build tailored PHP solutions that meet your specific requirements.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    >>> API Integration
+                  <span class="icon">▼</span>
+                </summary>
+                <p>
+                    Seamlessly connect your applications and systems by harnessing the potential of APIs.<br>
+                    I have expertise in integrating various APIs, enabling data exchange, automation, and enhanced functionality.
+                </p>
+            </details>
+        </div>
+    </div>
 
 </body>
 </html>
