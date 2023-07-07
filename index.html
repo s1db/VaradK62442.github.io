@@ -9,7 +9,7 @@
 <body>
     
     <!-- Navigation -->
-    <nav>
+    <nav class="largeScreen">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="html/about.html">About</a></li>
@@ -18,6 +18,19 @@
             <li><a href="html/blog.html">Blog</a></li>
             <li><a href="html/contact.html">Contact</a></li>
         </ul>
+    </nav>
+
+    <nav class="smallScreen">
+        <form>
+            <select name="dropdownMenu" onchange="location = this.value;">
+                <option selected="selected" value="index.html">Home</option>
+                <option value="html/about.html">About</option>
+                <option value="html/projects.html">Projects</option>
+                <option value="html/services.html">Services</option>
+                <option value="html/blog.html">Blog</option>
+                <option value="html/contact.html">Contact</option>
+            </select>
+        </form>
     </nav>
 
     <!-- Header -->
