@@ -1,0 +1,32 @@
+body {
+    background-color: #ededd5;
+    font-family: FreeMono, monospace;
+}
+
+/* Header */
+.title {
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: inline;
+    clear: both;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    width: 33%;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    padding-left: 50%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
