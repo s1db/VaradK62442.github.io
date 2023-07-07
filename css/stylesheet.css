@@ -30,9 +30,15 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
     .largeScreen {display: none;}
     .smallScreen {display: inline;}
+    body {
+        background-color: var(--mainCol);
+        font-family: FreeMono, monospace;
+        padding: 0px;
+        margin: 10px;
+    }
 }
 
 nav {
