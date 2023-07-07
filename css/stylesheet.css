@@ -4,7 +4,7 @@ body {
 }
 
 /* Header */
-.title {
+header {
     text-align: center;
 }
 
@@ -21,10 +21,11 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: black;
 }
 nav ul li a {
     display: block;
-    color: black;
+    color: #ededd5;
     padding-left: 50%;
     padding-bottom: 5%;
     padding-top: 5%;
